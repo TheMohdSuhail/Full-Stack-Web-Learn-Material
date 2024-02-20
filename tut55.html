@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops </title>
+</head>
+
+<body>
+    <div class="container">
+        This is about loops
+
+    </div>
+    <script>
+        console.log("This is tutorial 55");
+        // let i = 0;
+        // for(i=0;i<2;i++){
+        //     console.log(i);
+        // }
+        let msp = ["Fazal", "Yasar", "Maroof"];
+        //     for (let index = 0; index< msp.length; index++) {
+        // console.log("Hello Friend," + msp[index]);
+
+        //     }
+        // msp.forEach(function (element){
+        //     console.log("Hello Friend," + element + " to mordern JavaScript");  
+        // })
+
+
+        //    for (element of msp){
+        //     console.log("Hello Friend," + element + " to mordern JavaScript again");
+        //    }
+
+        let empoloyee = {
+            name: "MSP",
+            salary: 2,
+            channel: "themspofficial"
+        }
+
+
+        // Use this loop to iterate over objects in JavaScript
+        for (key in empoloyee) {
+            console.log(`The ${key} of empoloyee is ${empoloyee[key]}`);
+        }
+
+        // While Loop in JS
+        let i = 0;
+        while (i < 4) {
+            console.log(`${i} is less then 4`);
+            i++;
+        }
+
+        // Do While Loop in JS
+        let j = 34;
+           do{ 
+            console.log(`${j} is less then 4 and we are inside do while loop`);
+            j++;
+        }
+            while (j < 4);
+
+    </script>
+</body>
+
+</html>

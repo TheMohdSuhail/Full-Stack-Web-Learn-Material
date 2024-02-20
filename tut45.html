@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + media Queries</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer ';
+        }
+        @media only screen and (max-width:300px){
+            body{
+                background-color: red;
+            }
+            span{
+            display: block;
+            text-align: center;
+        }
+            .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            ' aside aside aside aside'
+            'footer footer footer footer ';
+        }
+        }
+        @media only screen and (min-width:300px) and (max-width:500px){
+             body{
+                background-color: blue;
+            }span{
+            display: block;
+            text-align: center;
+        }
+            .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            ' aside aside aside aside'
+            'footer footer footer footer ';
+        }
+        aside{
+            display: none;
+        }
+        }
+        @media  (min-width:501px) and (max-width:800px){
+            body{
+                background-color: yellow;
+            }
+            span{
+            display: block;
+            text-align: center;
+        }
+            .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            ' aside aside aside aside'
+            'footer footer footer footer ';
+        }
+    }
+        @media (min-width:801px) {
+             body{
+                background-color: green;
+            }
+        }
+
+        .bdr{
+            border: 2px solid black;
+            padding:10px 23px;
+            background-color: wheat;
+        }
+        nav{
+            grid-area: navbar;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Contect Us</span>
+            
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in hindi</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, dolorum sint! Quod illo tenetur architecto excepturi necessitatibus laborum possimus doloremque blanditiis, adipisci consectetur mollitia, quas voluptatem, nulla eligendi minus nesciunt. Nam incidunt rem delectus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt repudiandae tempore saepe exercitationem dolores a maxime inventore adipisci id quos voluptatum, odit consectetur nostrum reprehenderit delectus quae. Libero maiores natus vel sapiente nulla est quisquam repudiandae labore tempore dolore facere, modi quos placeat odit doloremque molestiae eligendi ipsum, ex dolorem nemo. Consectetur, culpa? Quidem perspiciatis sit mollitia quibusdam laboriosam qui non sequi ipsum, doloribus dolorum odit suscipit reiciendis corporis aperiam neque illo officia ad. Laboriosam sint excepturi nostrum accusamus, tempore dolor enim consequuntur quidem nesciunt provident voluptatibus quia blanditiis eaque animi aperiam ipsum voluptatem hic exercitationem itaque pariatur! Nihil suscipit ipsam doloremque labore fuga quis nobis provident, distinctio fugiat eos deleniti qui autem aspernatur? Quisquam molestias, ducimus unde minus numquam omnis illo!</p>
+        </section>
+        <aside class="bdr"> 
+            <h1 >More about us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">Copyright &copy; themsp 2021</footer>
+    
+</body>
+</html>

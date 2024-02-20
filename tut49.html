@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Function</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+        var str = "This is a String";
+        console.log(str);
+
+        // First occurece of a substring
+        var position = str.indexOf('is');
+        console.log(position);
+
+        // Last occurece of a substring
+        var position = str.lastIndexOf('is');
+        console.log(position);
+
+        // Substring from a string 
+        var substr = str.slice(1,7);
+        var substr = str.substring(1,7);
+        var substr = str.substr(1,7);
+        console.log(substr);
+
+        var replace = str.replace('String', 'MSP');
+        console.log(str);
+        console.log(replace);
+
+        console.log(str.toLocaleUpperCase());
+        console.log(replace.toLocaleLowerCase());
+
+        // // var char2 = str.charAt(2);
+        // var char2 = str.charCodeAt(2);
+
+        // console.log(char2)
+
+        console.log(str[2]);
+
+
+    </script>
+</body>
+</html>

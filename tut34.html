@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid red; */
+            background-color: burlywood;
+            /* for down shadow */
+            /* box-shadow: 10px 13px green; */
+
+            /* for up shadow  */
+            /* box-shadow: -10px -13px green; */
+
+            /* Shadow blur redious */
+            /* box-shadow: 10px 13px 10px green; */
+            box-shadow: inset 3px 5px green;
+            
+            /* multipale box shadow  */
+            box-shadow:  3px 5px green, 4px 6px red ;
+
+        }
+        .card h1{
+            text-shadow: 3px 4px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+           <h1> Card1</h1> 
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolorum tempore tempora impedit, nesciunt debitis distinctio quia at deserunt, quasi velit quisquam commodi laboriosam voluptate molestias excepturi dolor perferendis est eligendi autem? Quasi, eligendi.</p>
+        </div>
+        <div class="card" id="card-2">
+           <h1>Card2</h1> 
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolorum tempore tempora impedit, nesciunt debitis distinctio quia at deserunt, quasi velit quisquam commodi laboriosam voluptate molestias excepturi dolor perferendis est eligendi autem? Quasi, eligendi.</p>
+        
+        </div>
+        <div class="card" id="card-3">
+           <h1>Card3</h1> 
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolorum tempore tempora impedit, nesciunt debitis distinctio quia at deserunt, quasi velit quisquam commodi laboriosam voluptate molestias excepturi dolor perferendis est eligendi autem? Quasi, eligendi.</p>
+        </div>
+    </div>
+</body>
+</html>
